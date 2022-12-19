@@ -1,0 +1,87 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.body {
+  overflow-x: hidden;
+}
+
+.content {
+  display: none;
+}
+
+.card:hover .recommend_icon {
+  color: blue;
+}
+
+.card:hover .content {
+  color: #fff;
+  display: block;
+  background-color: rgba(242, 177, 109, 0.5);
+  border-radius: 5px;
+  min-height: 30%;
+}
+
+.card:hover .favorite_icon {
+  color: red;
+}
+
+#light {
+  --background-color: #f3ebf6;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+
+#dark {
+  --background-color: #14021b;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+@-webkit-keyframes my {
+  0% {
+    color: #0a22f8;
+  }
+
+  100% {
+    color: #f31729;
+  }
+}
+
+@-o-keyframes my {
+  0% {
+    color: #0a22f8;
+  }
+  100% {
+    color: #f31729;
+  }
+}
+
+@keyframes my {
+  0% {
+    color: #0a22f8;
+  }
+  100% {
+    color: #f31729;
+  }
+}
+
+.title {
+  font-weight: bold;
+  -webkit-animation: my 1000ms infinite;
+  -moz-animation: my 1000ms infinite;
+  -o-animation: my 1000ms infinite;
+  animation: my 1000ms infinite;
+}
+
+.img:hover {
+  filter: brightness(150%);
+}
+
+.img {
+  -webkit-box-shadow: 1px 3px 15px 2px #4c4e12;
+  box-shadow: 1px 3px 15px 2px #4c4e12;
+}
